@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Dépenses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion des Dépenses</h1>
+        <label>Libellé :</label>
+        <input type="text" id="libelle">
+        <label>Montant :</label>
+        <input type="number" id="montant">
+        <label>Date :</label>
+        <input type="date" id="date">
+        <button onclick="ajouterDepense()">Ajouter</button>
+
+        <h2>Dépenses du mois</h2>
+        <select id="moisSelect" onchange="afficherDepenses()"></select>
+        <ul id="listeDepenses"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
